@@ -1,3 +1,4 @@
+// Stateless functional componenet
 import React from 'react';
 
 export const Checkbox = ({label, checked, onChange}) => (

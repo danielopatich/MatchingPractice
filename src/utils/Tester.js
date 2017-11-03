@@ -1,3 +1,4 @@
+// Stateless functional componenet
 import React from 'react';
 
 export const Tester = ({ firstName, lastName, country, filteredDevices, experience }) => {

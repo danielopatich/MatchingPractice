@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import _ from 'lodash';
-import { TestersWithDevices, Countries, AppDevices } from './ApplauseData/index';
 import { DisplayDevices } from './components/DisplayDevices';
 import { DisplayCountries } from './components/DisplayCountries';
 import DisplayTesters from './components/DisplayTesters';
@@ -24,8 +22,10 @@ class App extends Component {
     if ( devices.includes(device)){
       const deviceIndex = newDevice.indexOf(device)
       newDevice.splice(deviceIndex, 1)
+      // remove one item at the first index
     } else {
       newDevice.push(device)
+      // otherwise, keep adding devices to end of array
     }
     this.setState({
       devices: newDevice
